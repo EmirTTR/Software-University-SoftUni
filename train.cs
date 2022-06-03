@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Globalization;
+using System.Linq;
 
 namespace _01._Train
 {
@@ -6,27 +10,43 @@ namespace _01._Train
     {
         static void Main(string[] args)
         {
-            int wagoons = int.Parse(Console.ReadLine());
-            int[] peoples = new int[wagoons];
-            int sum = 0;
+            List<int> wagons = Console.ReadLine()
+                .Split(" ")
+                .Select(int.Parse)
+                .ToList();
 
-            for (int i = 0; i < wagoons; i++)
+            int capacityOfWagon = int.Parse(Console.ReadLine());
+
+            string input;
+            int morePeople = 0;
+
+            while ((input = Console.ReadLine()) != "end")
             {
-                int people = int.Parse(Console.ReadLine());
-                peoples[i] = people;
-               
-                
+                string[] splitedInput = input.Split(" ");
 
-            }
-            for (int i = 0; i < peoples.Length; i++)
-            {
-                sum += peoples[i];
-                Console.Write(peoples[i] + " ");
+                if (splitedInput.Length == 1)
+                {
+                    morePeople = int.Parse(splitedInput[0]);
 
+                    for (int i = 0; i < wagons.Count; i++)
+                    {
+                        if (wagons[i] + morePeople <= capacityOfWagon)
+                        {
+                            wagons[i] += morePeople;
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    morePeople = int.Parse(splitedInput[1]);
+
+                    wagons.Add(morePeople);
+                }
             }
-            Console.WriteLine(" ");
-            Console.Write(sum);
-                  
+            string result = string.Join(" ", wagons);
+            Console.WriteLine(result);
         }
+
     }
 }

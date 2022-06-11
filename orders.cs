@@ -1,54 +1,53 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace _05._Orders
+namespace _04._Orders
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string typeOfFood = Console.ReadLine();
-            double priceForFood = int.Parse(Console.ReadLine());
-            foodBuy(typeOfFood,priceForFood);
+            Dictionary<string, double> product = new Dictionary<string, double>();
+            Dictionary<int, int> quontity = new Dictionary<int,int>();
+            int sum = 0;
+            
 
-        }
+            string[] input = Console.ReadLine().Split();
 
-        static void  foodBuy(string word,double number)
-        {
-            double waterPrice = 1.00;
-            double coffeePrice = 1.50;
-            double cokePrice = 1.40;
-            double snacksPrice = 2.00;
-
-            switch (word)
+            while (input[0]!="buy")
             {
-                case "water":
-                    double waterMoney = 0;
-                   waterMoney= number * waterPrice;
-                    Console.WriteLine($"{waterMoney:f2}");
-                    break;
-                case "coffee":
-                    double coffeeMoney = 0;
-                   coffeeMoney = number * coffeePrice;
-                    Console.WriteLine($"{coffeeMoney:f2}");
-                    break;
-                case "snacks":
-                   double snacksMoney = 0;
-                   snacksMoney=number * snacksPrice;
-                    Console.WriteLine($"{snacksMoney:f2}");
-                    break;
-                case "coke":
-                    double cokeMoney = 0;
-                   cokeMoney= number * cokePrice;
-                    Console.WriteLine($"{cokeMoney:f2}");
-                    break;
-                default:
-                    Console.WriteLine("Error!");
-                    break;
-                    ;
+                
+                string productName = input[0];
+                double productPrice = double.Parse(input[1]);
+                int producktQuontity = int.Parse(input[2]);
+                
+               
+                if (!product.ContainsKey(productName))
+                { 
+                    product.Add(productName, new double[1]);
+                }
+                else
+                {
+                    double preveousQuontity = product[productName][1];
+                    if (product[productName]!=productPrice)
+                    {
+                        product[productName] = 0;
+                        product[productName] += productPrice;
+                        productPrice *= producktQuontity;
+                        product.Remove(productName);
+                        product.Add(productName, productPrice);
+
+                    }
+                    
+                }
+                
+                input = Console.ReadLine().Split();
             }
-
+            foreach (var item in product)
+            {
+                Console.WriteLine($"{item.Key} -> {item.Value:f2}");
+            }
         }
-      
-
     }
 }

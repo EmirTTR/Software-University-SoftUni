@@ -1,19 +1,23 @@
 ﻿using System;
 
-namespace _04._Reverse_String
+namespace _01._Reverse_Strings
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string word = Console.ReadLine();
-            string reverse = string.Empty;
-            for (int i = word.Length-1; i >= 0; i--)
+            string input = Console.ReadLine();
+            while (input!="end")
             {
+                string reverse = string.Empty;
 
-                reverse += word[i];
+                for (int i = input.Length - 1; i >= 0; i--)
+                {
+                    reverse += input[i];
+                }
+                Console.WriteLine($"{input} = {reverse}");
+                input = Console.ReadLine();
             }
-            Console.WriteLine(reverse);
         }
     }
 }

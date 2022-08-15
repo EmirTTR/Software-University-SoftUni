@@ -8,33 +8,30 @@ namespace _04._Students
     {
         static void Main(string[] args)
         {
-            List<Student> students = new List<Student>();
-            string input = Console.ReadLine();
-            while (input!="end")
+            int n = int.Parse(Console.ReadLine());
+            List<Student> stdudents = new List<Student>();
+
+            for (int i = 0; i < n; i++)
             {
-                string[] split = input.Split();
-                string firstName = split[0];
-                string lastName = split[1];
-                int age = int.Parse(split[2]);
-                string city = split[3];
+                string[] input = Console.ReadLine().Split();
+                string firstName = input[0];
+                string lastName = input[1];
+                double grade = double.Parse(input[2]);
 
                 Student student = new Student()
                 {
                     FirstName = firstName,
-                    LastName=lastName,
-                    Age=age,
-                    City=city
+                    LastName = lastName,
+                    Grade = grade
+
                 };
-                students.Add(student);
-                input = Console.ReadLine();
+
+                stdudents.Add(student);
+
             }
-            string filteredCity = Console.ReadLine();
-            foreach (var student in students)
+            foreach (var student in stdudents.OrderByDescending(x=>x.Grade))
             {
-                if (student.City==filteredCity)
-                {
-                    Console.WriteLine($"{student.FirstName} {student.LastName} is {student.Age} years old.");
-                }
+                Console.WriteLine($"{student.FirstName} {student.LastName}: {student.Grade:f2}");
             }
         }
     }
@@ -42,7 +39,8 @@ namespace _04._Students
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public int Age { get; set; }
-        public string City { get; set; }
+        public double Grade { get; set; }
+
+   
     }
 }

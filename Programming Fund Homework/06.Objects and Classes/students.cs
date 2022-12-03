@@ -19,7 +19,8 @@ namespace _04._Students
                 double grade = double.Parse(input[2]);
 
                 Student student = new Student()
-                {
+                {  
+                    
                     FirstName = firstName,
                     LastName = lastName,
                     Grade = grade

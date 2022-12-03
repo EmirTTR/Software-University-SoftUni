@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
-
+/////
 namespace _02._Change_List
 {
     class Program

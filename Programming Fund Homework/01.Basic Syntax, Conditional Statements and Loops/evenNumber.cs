@@ -8,7 +8,7 @@ namespace _12._Even_Number
         {
             double number = double.Parse(Console.ReadLine());
 
-            
+            ///////////
             while (number % 2 != 0) 
            
             {

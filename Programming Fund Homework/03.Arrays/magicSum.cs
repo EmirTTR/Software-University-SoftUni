@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-
+///////////////
 namespace _08._Magic_Sum
 {
     class Program

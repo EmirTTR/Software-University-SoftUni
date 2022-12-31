@@ -9,7 +9,7 @@ namespace _07._String_Explosion
     {
         static void Main(string[] args)
         {
-
+///////////////
             string explosionLine = Console.ReadLine();
             int power =0;
 

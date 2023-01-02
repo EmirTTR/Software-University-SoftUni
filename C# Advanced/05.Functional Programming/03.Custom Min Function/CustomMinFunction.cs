@@ -2,7 +2,7 @@
 {
     using System;
     using System.Linq;
-
+/////////////
     public class CustomMinFunction
     {
         public static void Main()

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-
+/////////////////
 namespace _01._Randomize_Words
 {
     class Program

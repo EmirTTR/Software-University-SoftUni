@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+//////////
 namespace _02._Character_Multiplier
 {
     class Program

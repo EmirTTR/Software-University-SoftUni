@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Channels;
-
+//////////////
 namespace _02._English_Name_of_the_Last_Digit
 {
     class Program

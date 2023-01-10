@@ -8,7 +8,7 @@ namespace _01._Randomize_Words
         static void Main(string[] args)
         {
             string[] words = Console.ReadLine().Split(" ").ToArray();
-/////////////////
+
             Random rnd = new Random();
             for (int i = 0; i < words.Length; i++)
             {

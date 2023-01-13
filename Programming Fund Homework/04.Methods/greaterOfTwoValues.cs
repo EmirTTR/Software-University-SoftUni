@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.Design.Serialization;
 using Microsoft.Win32.SafeHandles;
-
+//////////////
 namespace _09._Greater_of_Two_Values
 {
     class Program

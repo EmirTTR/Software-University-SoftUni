@@ -1,5 +1,5 @@
 ﻿using System;
-//
+
 namespace _07._NxN_Matrix
 {
     class Program

@@ -1,5 +1,5 @@
 ﻿using System;
-//
+
 namespace _05._Orders
 {
     class Program

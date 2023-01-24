@@ -1,5 +1,5 @@
 ﻿using System;
-
+///
 namespace _08._Town_Info
 {
     class Program

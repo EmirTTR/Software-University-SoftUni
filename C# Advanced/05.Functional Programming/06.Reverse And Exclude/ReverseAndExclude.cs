@@ -1,4 +1,5 @@
 ﻿namespace _6.Reverse_and_exclude
+ //////////
 {
     using System;
     using System.Linq;

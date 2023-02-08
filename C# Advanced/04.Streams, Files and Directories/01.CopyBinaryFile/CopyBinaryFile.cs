@@ -1,5 +1,6 @@
 ﻿namespace CopyBinaryFile
 {
+     ////
     using System;
     public class CopyBinaryFile
     {

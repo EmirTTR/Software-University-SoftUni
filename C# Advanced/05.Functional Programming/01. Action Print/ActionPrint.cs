@@ -1,7 +1,7 @@
 ﻿namespace _1.Action_Print
 {
     using System;
-///
+//
     public class ActionPrint
     {
         public static void Main()

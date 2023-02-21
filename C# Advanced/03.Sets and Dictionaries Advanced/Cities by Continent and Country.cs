@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-////
+
 namespace _05._Cities_by_continent_and_Country
 {
     class Program

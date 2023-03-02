@@ -1,5 +1,5 @@
 ﻿using System;
-//
+/
 namespace _11.MultiplicationTable_2._0
 {
     class Program

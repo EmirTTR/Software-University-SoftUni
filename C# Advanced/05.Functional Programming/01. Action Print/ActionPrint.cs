@@ -8,7 +8,7 @@
         {
             var input = Console.ReadLine().Split();
 
-            // Both variations are EQUAL
+            
             Action<string[]> action = Print;
             action(input);
 

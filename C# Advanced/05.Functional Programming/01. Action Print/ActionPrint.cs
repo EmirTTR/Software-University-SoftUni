@@ -14,7 +14,7 @@
 
             Console.WriteLine();
 
-            // Both variations are EQUAL
+           
             //Action<string[]> lambdaAction = arr => Console.WriteLine(string.Join(Environment.NewLine, arr));
             //lambdaAction(input);
         }

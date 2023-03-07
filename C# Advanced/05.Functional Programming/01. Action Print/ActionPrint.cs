@@ -15,7 +15,7 @@
             Console.WriteLine();
 
            
-            //Action<string[]> lambdaAction = arr => Console.WriteLine(string.Join(Environment.NewLine, arr));
+            
             //lambdaAction(input);
         }
 

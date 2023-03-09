@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-names//pace TruckTour
+namespace TruckTour
 {
     class TruckTour
     {

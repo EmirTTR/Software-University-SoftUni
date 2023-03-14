@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace _01._Count_Same_Values_in_Array
+name//space _01._Count_Same_Values_in_Array
 {
     class Program
     {

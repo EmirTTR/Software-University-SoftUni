@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-n/amespace _03._Rounding_Numbers
+namespace _03._Rounding_Numbers
 {
     class Program
     {

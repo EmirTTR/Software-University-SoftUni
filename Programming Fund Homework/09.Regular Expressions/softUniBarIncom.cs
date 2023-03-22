@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
-////
+//////
 namespace _03._SoftUni_Bar_Income
 {
     class Program

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-
+//
 namespace _04._Word_Filter
 {
     class Program

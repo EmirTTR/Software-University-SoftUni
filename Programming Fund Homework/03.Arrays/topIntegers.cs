@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-///
+
 namespace _05._Top_Integers
 {
     class Program
